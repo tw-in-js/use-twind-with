@@ -48,7 +48,11 @@ export default function withTwind(
       (
         await (prerender ||
           (prerender = import('@twind/wmr/prerender').then((m) =>
-            m.default(config as Configuration & TwindPreactConfiguration, render as PrerenderCallback, options),
+            m.default(
+              config as Configuration & TwindPreactConfiguration,
+              render as PrerenderCallback,
+              options,
+            ),
           )))
       )(data),
   }
