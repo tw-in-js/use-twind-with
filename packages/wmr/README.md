@@ -10,7 +10,7 @@ npm install @twind/wmr
 
 ## Usage
 
-[![Edit twind-wmr](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-wmr-l3ym7?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit twind-wmr](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-wmr-orudp?fontsize=14&hidenavigation=1&theme=dark)
 
 ```diff
 -import hydrate from 'preact-iso/hydrate';
@@ -29,7 +29,7 @@ hydrate(<App />)
 
 ## Shim-like usage but without the [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html)
 
-[![Edit twind-shim-wmr](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-wmr-forked-yczps?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit twind-shim-wmr](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-shim-wmr-nu61v?fontsize=14&hidenavigation=1&theme=dark)
 
 ```diff
 -import hydrate from 'preact-iso/hydrate';
