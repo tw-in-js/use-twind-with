@@ -1,6 +1,12 @@
-# Twind JSX Preprocessors
+# Twind Integration Packages
 
-> Twind integration packages for frameworks & libraries with examples
+> [Twind](https://twind.dev) integration packages for frameworks & libraries with examples
+
+## Available Packages
+
+- [@twind/next](./packages/next#readme) – [Next.js](https://nextjs.org)
+- [@twind/preact](./packages/preact#readme) – [Preact](https://preactjs.com) which allows to use the [tw property](https://github.com/tw-in-js/twind-jsx-preprocessor/blob/main/docs/tw-prop.md), `css` property and `className` (shim without [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html))
+- [@twind/preact](./packages/next#readme) – [WMR](https://github.com/preactjs/wmr/tree/main/packages/wmr) utilizing [@twind/preact](https://www.npmjs.com/package/@twind/preact)
 
 ## Contribute
 

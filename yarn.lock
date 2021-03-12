@@ -5747,15 +5747,6 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twind@^0.15.10:
-  version "0.15.10"
-  resolved "https://registry.npmjs.org/twind/-/twind-0.15.10.tgz#2c3a90c7ff98c2041b013cfb00e661502d5e3723"
-  integrity sha512-o/2yfYUbsa5EV69Vu5De5oEwspOISPb/ZmuJ04+b4gKG9qom6qFJYY6r8ZuXoKNDFY7O03qCQZzlpD3UHYBF0A==
-  dependencies:
-    csstype "^3.0.5"
-    htmlparser2 "^6.0.0"
-    style-vendorizer "^2.0.0"
-
 twind@^0.16.0:
   version "0.16.0"
   resolved "https://registry.npmjs.org/twind/-/twind-0.16.0.tgz#8045ae7178149aaa94669669ea98c1f129a0ef82"
