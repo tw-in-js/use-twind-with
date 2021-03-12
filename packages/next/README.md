@@ -10,6 +10,8 @@ npm install @twind/next
 
 ## Usage
 
+[![Edit twind-nextjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/priceless-hill-1lkv3?fontsize=14&hidenavigation=1&theme=dark)
+
 0. Create a `twind.config.js` (optional)
 
 ```js
@@ -156,6 +158,8 @@ export default Home
 ## Usage with the shim
 
 > TLDR; replace `@twind/next/app` with `@twind/next/shim/app` and `@twind/next/document` with `@twind/next/shim/document`
+
+[![Edit twind-shim-nextjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-shim-nextjs-53y61?fontsize=14&hidenavigation=1&theme=dark)
 
 0. Create a `twind.config.js` (optional)
 

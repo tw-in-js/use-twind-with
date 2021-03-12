@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
-    "distilt": "^0.10.0",
+    "distilt": "^0.10.1",
     "esbuild": "^0.8.31",
     "next": "10.x",
     "react": "^17.0.1",

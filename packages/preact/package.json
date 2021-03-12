@@ -38,7 +38,7 @@
     }
   },
   "devDependencies": {
-    "distilt": "^0.10.0",
+    "distilt": "^0.10.1",
     "esbuild": "^0.8.31",
     "htm": "^3.0.4",
     "preact": "^10.5.12",

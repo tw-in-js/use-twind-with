@@ -10,6 +10,8 @@ npm install @twind/preact
 
 ## Usage
 
+[![Edit twind-preact](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/thirsty-banzai-smrpi?fontsize=14&hidenavigation=1&theme=dark)
+
 > You **must** call `setup` during the app initialization.
 
 ```js
@@ -41,6 +43,8 @@ const App = () => (
 ```
 
 ## Shim-like usage but without the [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html)
+
+[![Edit twind-shim-preact](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-preact-forked-wfou9?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
 import { setup } from '@twind/preact'
