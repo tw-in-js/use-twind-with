@@ -1,6 +1,6 @@
 {
   "name": "@twind/wmr-example",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "wmr",
@@ -12,7 +12,7 @@
     "react-dom": "preact/compat"
   },
   "dependencies": {
-    "@twind/wmr": "*",
+    "@twind/wmr": "^1.0.0",
     "preact": "^10.5.12",
     "preact-iso": "^1.0.1",
     "twind": "^0.15.10"
