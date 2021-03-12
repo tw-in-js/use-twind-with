@@ -2105,10 +2105,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-distilt@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.npmjs.org/distilt/-/distilt-0.10.0.tgz#ceca0a5e044a9542e30eb0c71138f80380b91469"
-  integrity sha512-hb8v8ngDC5/GfPWtSus/JkwRXucAZKiUW8qIwZBHN4FzWBPQXKIPspAwYX4Jt9R3EPDTLtfr8MQUZ8/NmVux9w==
+distilt@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.npmjs.org/distilt/-/distilt-0.10.1.tgz#7603f8f3b64c24e7ed66a696ee0ec85dbb2d4dc4"
+  integrity sha512-JZSjKlpXMDBunrwlpDZW3+L+UlnjaSP1egOfEPix7anPXG24Mq3d9SRghpQkoZs8jeCq76Gnp3/VL2uM1NXtSA==
   dependencies:
     es-module-lexer "^0.3.26"
     esbuild "^0.8.28"

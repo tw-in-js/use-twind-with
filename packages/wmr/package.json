@@ -43,7 +43,7 @@
     }
   },
   "devDependencies": {
-    "distilt": "^0.10.0",
+    "distilt": "^0.10.1",
     "esbuild": "^0.8.31",
     "preact": "^10.5.12",
     "preact-iso": "^1.0.0",
