@@ -1,0 +1,13 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "allowBranch": "main"
+    },
+    "publish": {
+      "conventionalCommits": true
+    }
+  }
+}

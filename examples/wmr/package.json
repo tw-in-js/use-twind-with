@@ -1,0 +1,23 @@
+{
+  "name": "@twind/wmr-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "wmr",
+    "build": "wmr build --prerender",
+    "serve": "wmr serve"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  },
+  "dependencies": {
+    "@twind/wmr": "*",
+    "preact": "^10.5.12",
+    "preact-iso": "^1.0.1",
+    "twind": "^0.15.10"
+  },
+  "devDependencies": {
+    "wmr": "^1.3.1"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "@twind/preact",
+  "version": "0.0.0",
+  "description": "Twind integration for preact",
+  "keywords": [
+    "twind",
+    "preact"
+  ],
+  "homepage": "https://github.com/tw-in-js/use-twind-with/tree/main/packages/preact#readme",
+  "bugs": "https://github.com/tw-in-js/use-twind-with/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tw-in-js/use-twind-with",
+    "directory": "packages/preact"
+  },
+  "license": "MIT",
+  "author": "Sascha Tandel (https://github.com/sastan)",
+  "engines": {
+    "node": ">=10.13"
+  },
+  "// The 'module', 'unpkg' and 'types' fields are added by distilt": "",
+  "main": "index.ts",
+  "// Each entry is expanded into several bundles (module, script, types, require, node, and default)": "",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "// These are relative from within the dist/ folder": "",
+  "sideEffects": false,
+  "peerDependencies": {
+    "preact": "^10.5.12",
+    "twind": ">=0.15.9 <2",
+    "typescript": "^4.1.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "distilt": "^0.10.0",
+    "esbuild": "^0.8.31",
+    "htm": "^3.0.4",
+    "preact": "^10.5.12",
+    "preact-render-to-string": "^5.1.15",
+    "twind": "^0.16.0",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "build": "distilt",
+    "pretest": "tsc",
+    "test": "uvu -r esm -r ../../test-env.js",
+    "test:coverage": "c8 --src -r lcov -r text yarn test",
+    "test:watch": "watchlist . -i node_modules -i dist -- yarn test",
+    "version": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

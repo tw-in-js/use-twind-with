@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "format": "prettier --write --ignore-path .gitignore .",
+    "release": "lerna publish --contents dist",
+    "version": "npm run format",
+    "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage"
+  },
+  "devDependencies": {
+    "c8": "^7.3.5",
+    "esbuild": "^0.9.0",
+    "esbuild-register": "^2.0.0",
+    "esm": "^3.2.25",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2",
+    "uvu": "^0.5.1",
+    "watchlist": "^0.2.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
