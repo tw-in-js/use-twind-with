@@ -6,13 +6,13 @@
 
 - [@twind/next](./packages/next#readme) – [Next.js](https://nextjs.org)
 - [@twind/preact](./packages/preact#readme) – [Preact](https://preactjs.com) which allows to use the [tw property](https://github.com/tw-in-js/twind-jsx-preprocessor/blob/main/docs/tw-prop.md), `css` property and `className` (shim without [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html))
-- [@twind/preact](./packages/next#readme) – [WMR](https://github.com/preactjs/wmr/tree/main/packages/wmr) utilizing [@twind/preact](https://www.npmjs.com/package/@twind/preact)
+- [@twind/wmr](./packages/wmr#readme) – [WMR](https://github.com/preactjs/wmr/tree/main/packages/wmr) utilizing [@twind/preact](https://www.npmjs.com/package/@twind/preact)
 
 ## Contribute
 
 Thanks for being willing to contribute!
 
-> This project is free and open-source, so if you think this project can help you or anyone else, you may [star it on GitHub](https://github.com/tw-in-js/twind-jsx-preprocessor). Feel free to [open an issue](https://github.com/tw-in-js/twind-jsx-preprocessor/issues) if you have any idea, question, or you've found a bug.
+> This project is free and open-source, so if you think this project can help you or anyone else, you may [star it on GitHub](https://github.com/tw-in-js/use-twind-with). Feel free to [open an issue](https://github.com/tw-in-js/use-twind-with/issues) if you have any idea, question, or you've found a bug.
 
 **Working on your first Pull Request?** You can learn how from this _free_ series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
