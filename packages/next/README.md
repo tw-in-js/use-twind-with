@@ -159,7 +159,7 @@ export default Home
 
 > TL;DR replace `@twind/next/app` with `@twind/next/shim/app` and `@twind/next/document` with `@twind/next/shim/document`
 
-[![Edit twind-shim-nextjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-shim-nextjs-53y61?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit twind-shim-nextjs](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-shim-nextjs-7x9nw?fontsize=14&hidenavigation=1&theme=dark)
 
 0. Create a `twind.config.js` (optional)
 
