@@ -1,4 +1,4 @@
-# @twind/preact [![Latest Release](https://flat.badgen.net/npm/v/twind?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/preact) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
+# @twind/preact [![Latest Release](https://flat.badgen.net/npm/v/@twind/preact?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/preact) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
 
 > [Twind](https://twind.dev) integration for [Preact](https://preactjs.com) which allows to use the [tw property](https://github.com/tw-in-js/twind-jsx-preprocessor/blob/main/docs/tw-prop.md), `css` property and `className` (shim without [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html)).
 

@@ -1,4 +1,4 @@
-# @twind/wmr [![Latest Release](https://flat.badgen.net/npm/v/twind?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/wmr) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
+# @twind/wmr [![Latest Release](https://flat.badgen.net/npm/v/@twind/wmr?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/wmr) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
 
 > [Twind](https://twind.dev) integration for [WMR](https://github.com/preactjs/wmr/tree/main/packages/wmr) utilizing [@twind/preact](https://www.npmjs.com/package/@twind/preact).
 
