@@ -1,7 +1,7 @@
 import type { Options, JSX } from 'preact'
 import { options as preactOptions } from 'preact'
 
-import { TW, Configuration, Token, CSSRules, directive } from 'twind'
+import { TW, Configuration, Token, CSSRules, directive, Falsy } from 'twind'
 import { tw as defaultTW, setup as setupTwind } from 'twind'
 
 export * from 'twind'
@@ -18,7 +18,7 @@ declare module 'preact' {
   namespace JSX {
     interface DOMAttributes<Target extends EventTarget> {
       tw?: Token
-      css?: CSSRules
+      css?: CSSRules | Falsy
       class?: string
       className?: string
     }
