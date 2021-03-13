@@ -1,6 +1,6 @@
 {
   "name": "@twind/preact",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Twind integration for preact",
   "keywords": [
     "twind",
