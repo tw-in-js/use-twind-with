@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.4...@twind/wmr@1.0.5) (2021-03-15)
+
+### Bug Fixes
+
+- ensure to start a new async scope ([00aa9ca](https://github.com/tw-in-js/use-twind-with/commit/00aa9cae6d01e88ca3ca1db74dee6a0bf77c962f))
+
 ## [1.0.4](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.3...@twind/wmr@1.0.4) (2021-03-13)
 
 **Note:** Version bump only for package @twind/wmr
