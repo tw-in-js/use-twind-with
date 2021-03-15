@@ -45,7 +45,11 @@ export const setup = (
   const useClassNameProp = props.className === true
 
   if (useTWProp || useCSSProp || useClassNameProp) {
-    const handle = (props: JSX.DOMAttributes<any>): void => {
+    const { vnode: vnodeHook } = options
+
+    options.vnode = (vnode) => {
+      const { props } = vnode as { props: JSX.DOMAttributes<any> }
+
       const classes: string[] = []
 
       if (useTWProp && 'tw' in props) {
@@ -74,14 +78,6 @@ export const setup = (
 
       if (classes.length) {
         props.className = classes.join(' ')
-      }
-    }
-
-    const { vnode: vnodeHook } = options
-
-    options.vnode = (vnode) => {
-      if (typeof vnode.type == 'string') {
-        handle(vnode.props)
       }
 
       // Call previously defined hook if there was any
