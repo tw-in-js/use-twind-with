@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.5...@twind/wmr@1.0.6) (2021-03-15)
+
+### Bug Fixes
+
+- always transform props (incl non HTML components) ([2da41f4](https://github.com/tw-in-js/use-twind-with/commit/2da41f456dff452d17a1097a6d0ead9a2f0b7bab))
+
 ## [1.0.5](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.4...@twind/wmr@1.0.5) (2021-03-15)
 
 ### Bug Fixes
