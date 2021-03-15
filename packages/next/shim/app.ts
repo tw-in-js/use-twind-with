@@ -3,22 +3,17 @@ import App from 'next/app'
 import type { Configuration } from 'twind/observe'
 import { observe, setup } from 'twind/observe'
 
-export type Constructor<T = object, S = object> = (new (...input: any[]) => T) & S
+export default function withTwindApp<Base = typeof App>(
+  config?: Configuration,
+  BaseApp?: Base,
+): Base
 
-export default function withTwindApp<
-  P = {},
-  Base extends Constructor<App<P>, typeof App> = typeof App
->(config?: Configuration, BaseApp?: Base): Base
+export default function withTwindApp<Base = typeof App>(BaseApp?: Base): Base
 
-export default function withTwindApp<
-  P = {},
-  Base extends Constructor<App<P>, typeof App> = typeof App
->(BaseApp?: Base): Base
-
-export default function withTwindApp<
-  P = {},
-  Base extends Constructor<App<P>, typeof App> = typeof App
->(configOrBase?: Configuration | Base, BaseApp?: Base): Base {
+export default function withTwindApp<Base = typeof App>(
+  configOrBase?: Configuration | Base,
+  BaseApp?: Base,
+): Base {
   if (typeof configOrBase == 'function') {
     BaseApp = configOrBase
     configOrBase = {}
