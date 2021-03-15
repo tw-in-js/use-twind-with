@@ -19,11 +19,12 @@ export default function prerenderWithTwind(
 
   setup({ ...config, sheet })
 
-  return async (data) => {
+  // Ensure to start a new async scope
+  return (data) => Promise.resolve().then(async () => {
     sheet.reset()
 
     let { html, ...rest } = await prerender(render(data), options)
 
     return { ...rest, html: getStyleTag(sheet) + html }
-  }
+  })
 }
