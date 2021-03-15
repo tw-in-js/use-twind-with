@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/tw-in-js/use-twind-with/compare/@twind/next@1.0.5...@twind/next@1.0.6) (2021-03-15)
+
+### Bug Fixes
+
+- App typings ([9ccef4a](https://github.com/tw-in-js/use-twind-with/commit/9ccef4af1a556c52ecfd826f4884400ac6fa0b07))
+
 ## [1.0.5](https://github.com/tw-in-js/use-twind-with/compare/@twind/next@1.0.4...@twind/next@1.0.5) (2021-03-13)
 
 **Note:** Version bump only for package @twind/next

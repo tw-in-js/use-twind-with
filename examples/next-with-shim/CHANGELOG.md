@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/tw-in-js/use-twind-with/compare/@twind/next-with-shim-example@1.0.5...@twind/next-with-shim-example@1.0.6) (2021-03-15)
+
+**Note:** Version bump only for package @twind/next-with-shim-example
+
 ## [1.0.5](https://github.com/tw-in-js/use-twind-with/compare/@twind/next-with-shim-example@1.0.4...@twind/next-with-shim-example@1.0.5) (2021-03-13)
 
 **Note:** Version bump only for package @twind/next-with-shim-example
