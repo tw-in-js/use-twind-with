@@ -1,4 +1,4 @@
-# @twind/next [![Latest Release](https://flat.badgen.net/@twind/next/v/twind?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/next) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
+# @twind/next [![Latest Release](https://flat.badgen.net/npm/v/@twind/next?icon=npm&label&cache=10800&color=blue)](https://www.npmjs.com/package/@twind/next) [![MIT License](https://flat.badgen.net/github/license/tw-in-js/use-twind-with)](https://github.com/tw-in-js/use-twind-with/blob/main/LICENSE)
 
 > [Twind](https://twind.dev) integration for [Next.js](https://nextjs.org)
 
