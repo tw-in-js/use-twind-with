@@ -1245,10 +1245,10 @@
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@types/babel__core@^7.1.12":
-  version "7.1.12"
-  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz#4d8e9e51eb265552a7e4f1ff2219ab6133bdfb2d"
-  integrity sha512-wMTHiiTiBAAPebqaPiPDLFA4LYPKr6Ph0Xq/6rq1Ur3v66HXyG+clfR9CNETkD7MQS8ZHvpQOtA53DLws5WAEQ==
+"@types/babel__core@^7.1.13":
+  version "7.1.13"
+  resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.13.tgz#bc6eea53975fdf163aff66c086522c6f293ae4cf"
+  integrity sha512-CC6amBNND16pTk4K3ZqKIaba6VGKAQs3gMjEY17FVd56oI/ZWt9OhS6riYiWv9s8ENbYUi7p8lgqb0QHQvUKQQ==
   dependencies:
     "@babel/parser" "^7.1.0"
     "@babel/types" "^7.0.0"
@@ -5540,6 +5540,13 @@ rollup@^2.41.2:
   optionalDependencies:
     fsevents "~2.3.1"
 
+rollup@^2.42.0:
+  version "2.42.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.42.0.tgz#444ce20a45614099decdd786f2a6fcd6c2240b08"
+  integrity sha512-P9bJnaZ2P0hawoJo+Jto8YZZqil9URogNVE4KJeyj6wrUSDIbdMvmj7CsyEFwdXu/I5SiWEzB1hfmLeMldH6ww==
+  optionalDependencies:
+    fsevents "~2.3.1"
+
 run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.npmjs.org/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
@@ -5706,10 +5713,10 @@ socks@^2.3.3:
     ip "^1.1.5"
     smart-buffer "^4.1.0"
 
-solid-js@^0.24.13:
-  version "0.24.13"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.24.13.tgz#4927c561cfcce9e55927af268311c2e3e6709258"
-  integrity sha512-eFuKAAIzsuwPI4DuUj6Kuf5IFM4wzrQMffuwY/5bdnR4N+b+8CELmLox+9yyOaV4IhmoUVB+APt2ZQ1vOjSUhw==
+solid-js@^0.24.15:
+  version "0.24.15"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.24.15.tgz#c6001624cade37262ca188792a7cf4da8d3a9f7c"
+  integrity sha512-p+Cv3AZBwpeQTRoCoJNXvmpl8nt9oOx2Xj6/zsrImul1lLGCgBqlyg+pKByOECG48Oe5oNAQOooe3Ba8zovVXA==
 
 sort-keys@^2.0.0:
   version "2.0.0"
@@ -6258,6 +6265,15 @@ twind@^0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.0.tgz#8045ae7178149aaa94669669ea98c1f129a0ef82"
   integrity sha512-dAslmdmPi8N9dmEB2ZgZewqTHnkC2K39WaPQSWAqon+oKhn7sh4wd5R0zkxvPpbB8QGLdGxeEOZJjQt5RgS57Q==
+  dependencies:
+    csstype "^3.0.5"
+    htmlparser2 "^6.0.0"
+    style-vendorizer "^2.0.0"
+
+twind@^0.16.4:
+  version "0.16.4"
+  resolved "https://registry.yarnpkg.com/twind/-/twind-0.16.4.tgz#158f8740b530dd3eb0c337ab66c025325bc67189"
+  integrity sha512-hUFamhwMDJTlrOujYCAlx72w5otflJLjKzA9UmiwcljlRc+9WWmm4W96TtbVaGTuUGishWLKB8k2gvp1uYNT+w==
   dependencies:
     csstype "^3.0.5"
     htmlparser2 "^6.0.0"
