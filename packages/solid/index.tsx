@@ -1,8 +1,14 @@
-import { Dynamic } from 'solid-js/web'
+import {
+  Dynamic,
+  renderToString as solidRenderToString,
+  renderToStringAsync as solidRenderToStringAsync,
+} from 'solid-js/web'
 import { Component, splitProps, JSX } from 'solid-js'
 
-import type { TW } from 'twind'
+import { setup, TW, Configuration } from 'twind'
 import { style, StyleConfig, StyleProps, tw as defaultTwInstance } from 'twind/style'
+import { getStyleTag, virtualSheet } from 'twind/sheets'
+import { getStyleTag as asyncGetStyleTag, asyncVirtualSheet } from 'twind/server'
 
 export * from 'twind/style'
 
@@ -43,4 +49,51 @@ export function styled<Variants, Tag extends Tags>(
   }
 
   return styledComponent
+}
+
+export function renderToString<T>(
+  app: () => T,
+  options: {
+    eventNames?: string[] | undefined
+    stylesAttributes?: Record<string, string>
+  } & Configuration = {},
+) {
+  const { eventNames, stylesAttributes, ...twindOptions } = options
+  const sheet = twindOptions.sheet || virtualSheet()
+
+  setup({ ...twindOptions, sheet })
+
+  // @ts-ignore : seems like sheet.reset() doesn't exist
+  sheet.reset()
+
+  const results = solidRenderToString(app, { eventNames })
+
+  // @ts-ignore : seems like there's a Sheet / StyleTagSheet type mismatch
+  const styles = getStyleTag(sheet, stylesAttributes ? { stylesAttributes } : undefined)
+
+  return { ...results, styles }
+}
+
+export async function renderToStringAsync<T>(
+  app: () => T,
+  options: {
+    eventNames?: string[] | undefined
+    timeoutMs?: number | undefined
+    stylesAttributes?: Record<string, string>
+  } & Configuration = {},
+) {
+  const { eventNames, timeoutMs, stylesAttributes, ...twindOptions } = options
+  const sheet = twindOptions.sheet || asyncVirtualSheet()
+
+  setup({ ...twindOptions, sheet })
+
+  // @ts-ignore : seems like sheet.reset() doesn't exist
+  sheet.reset()
+
+  const results = await solidRenderToStringAsync(app, { eventNames, timeoutMs })
+
+  // @ts-ignore : seems like there's a Sheet / StyleTagSheet type mismatch
+  const styles = asyncGetStyleTag(sheet, stylesAttributes ? { stylesAttributes } : undefined)
+
+  return { ...results, styles }
 }
