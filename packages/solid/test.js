@@ -1,7 +1,17 @@
+/**
+ * This file is similar to the one present at the root of this project.
+ * It's used to prepare a special environement for Solid handling.
+ *
+ * The Solid's JSX needs special transformation via Babel which Jiti
+ * provides out of the box and can additionally transform
+ * typescript's syntax down to common js.
+ */
 const { transformSync } = require('@babel/core')
 
+// Hint all the build tools that we are in a test environement
 process.env.NODE_ENV = 'test'
 
+// Babel transform applied to [j|t]sx? files when imported
 function transform({ filename, source }) {
   const { code } = transformSync(source, {
     filename,

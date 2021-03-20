@@ -10,7 +10,8 @@ import { virtualSheet } from 'twind/sheets'
 import { createResource, Suspense } from 'solid-js'
 import { renderToString as solidRenderToString } from 'solid-js/web'
 
-import { styled, renderToString, renderToStringAsync } from './index'
+import { styled } from './src/core'
+import { renderToString, renderToStringAsync } from './src/server'
 
 const test = suite<{ sheet: VirtualSheet; tw: TW }>('@twind/solid')
 
@@ -62,6 +63,10 @@ test('renderToString emits critical CSS', () => {
   assert.ok(styles.includes('text-gray-50'))
 })
 
+/**
+ * Skipping this test as twind need special handling for async SSR
+ * See the conversation here: https://github.com/tw-in-js/use-twind-with/pull/5#issuecomment-802175318
+ */
 test.skip('renderToStringAsync emits critical CSS', async () => {
   const { html, styles } = await renderToStringAsync(
     () => {
@@ -78,7 +83,7 @@ test.skip('renderToStringAsync emits critical CSS', async () => {
         </Suspense>
       )
     },
-    { preflight: false },
+    { preflight: false, mode: 'silent' },
   )
 
   assert.ok(html.includes('bg-blue-500 text-gray-50'))

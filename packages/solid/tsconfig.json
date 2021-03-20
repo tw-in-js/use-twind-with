@@ -4,6 +4,6 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js"
   },
-  "include": ["**/*.ts", "**/*.tsx", "index.tsx", "test.js", "test.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "src/index.tsx", "test.js", "test.tsx"],
   "exclude": ["dist", "node_modules"]
 }
