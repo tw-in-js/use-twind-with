@@ -1,0 +1,78 @@
+{
+  "name": "@twind/solid",
+  "version": "0.0.0",
+  "description": "Twind integration for Solid",
+  "keywords": [
+    "twind",
+    "solid"
+  ],
+  "homepage": "https://github.com/tw-in-js/use-twind-with/tree/main/packages/solid#readme",
+  "bugs": "https://github.com/tw-in-js/use-twind-with/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tw-in-js/use-twind-with",
+    "directory": "packages/solid"
+  },
+  "license": "MIT",
+  "author": "Alexandre Mouton-Brady (https://github.com/amoutonbrady)",
+  "engines": {
+    "node": ">=10.13"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.module.js",
+  "module": "dist/core/index.module.js",
+  "types": "dist/core/core.d.ts",
+  "exports": {
+    ".": {
+      "solid": "./dist/core/core.jsx",
+      "import": "./dist/core/index.module.js",
+      "browser": "./dist/core/index.module.js",
+      "require": "./dist/core/index.module.js",
+      "node": "./dist/core/index.module.js"
+    },
+    "./server": {
+      "solid": "./dist/server/server.jsx",
+      "import": "./dist/server/index.module.js",
+      "browser": "./dist/server/index.module.js",
+      "require": "./dist/server/index.common.js",
+      "node": "./dist/server/index.common.js"
+    }
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "solid-js": "^0.24",
+    "twind": ">=0.15.9 <2",
+    "typescript": "^4.2"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/babel__core": "^7.1.13",
+    "babel-preset-solid": "^0.24.13",
+    "jiti": "^1.6.4",
+    "rollup": "^2.42.0",
+    "rollup-preset-solid": "^0.3.0",
+    "solid-js": "^0.24.15",
+    "twind": "^0.16.6",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "tsc",
+    "test": "node test",
+    "test:coverage": "c8 --src -r lcov -r text yarn test",
+    "test:watch": "watchlist . -i node_modules -i dist -- yarn test",
+    "version": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
