@@ -50,34 +50,36 @@ export const setup = (
     options.vnode = (vnode) => {
       const { props } = vnode as { props: JSX.DOMAttributes<any> }
 
-      const classes: string[] = []
+      if (typeof props == 'object') {
+        const classes: string[] = []
 
-      if (useTWProp && 'tw' in props) {
-        if (props.tw) {
-          classes.push(tw(props.tw))
-        }
-        props.tw = undefined
-      }
-
-      if (useCSSProp && 'css' in props) {
-        if (props.css) {
-          classes.push(tw(directive(css$, props.css)))
+        if (useTWProp && 'tw' in props) {
+          if (props.tw) {
+            classes.push(tw(props.tw))
+          }
+          props.tw = undefined
         }
 
-        props.css = undefined
-      }
+        if (useCSSProp && 'css' in props) {
+          if (props.css) {
+            classes.push(tw(directive(css$, props.css)))
+          }
 
-      if (props.class) {
-        classes.push(useClassNameProp ? tw(props.class) : props.class)
-        props.class = undefined
-      }
+          props.css = undefined
+        }
 
-      if (props.className) {
-        classes.push(useClassNameProp ? tw(props.className) : props.className)
-      }
+        if (props.class) {
+          classes.push(useClassNameProp ? tw(props.class) : props.class)
+          props.class = undefined
+        }
 
-      if (classes.length) {
-        props.className = classes.join(' ')
+        if (props.className) {
+          classes.push(useClassNameProp ? tw(props.className) : props.className)
+        }
+
+        if (classes.length) {
+          props.className = classes.join(' ')
+        }
       }
 
       // Call previously defined hook if there was any
