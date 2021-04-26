@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/tw-in-js/use-twind-with/compare/@twind/preact@1.0.4...@twind/preact@1.0.5) (2021-04-26)
+
+### Bug Fixes
+
+- **preact:** ensure props is an object ([6e20351](https://github.com/tw-in-js/use-twind-with/commit/6e2035172b781550bc9962d8cdef0a561b9a6c0c))
+
 ## [1.0.4](https://github.com/tw-in-js/use-twind-with/compare/@twind/preact@1.0.3...@twind/preact@1.0.4) (2021-03-15)
 
 ### Bug Fixes

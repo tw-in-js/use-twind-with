@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.7](https://github.com/tw-in-js/use-twind-with/compare/@twind/next@1.0.6...@twind/next@1.0.7) (2021-04-26)
+
+### Bug Fixes
+
+- npm badge ([316a235](https://github.com/tw-in-js/use-twind-with/commit/316a235bcddd8b2ab52de65f9f8e13a7ff38f4c7))
+
 ## [1.0.6](https://github.com/tw-in-js/use-twind-with/compare/@twind/next@1.0.5...@twind/next@1.0.6) (2021-03-15)
 
 ### Bug Fixes
