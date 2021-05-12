@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.8](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.7...@twind/wmr@1.0.8) (2021-05-12)
+
+### Bug Fixes
+
+- preact-iso peer dep version ([#14](https://github.com/tw-in-js/use-twind-with/issues/14)) ([a8e0eec](https://github.com/tw-in-js/use-twind-with/commit/a8e0eec7ad687c819d47e7d21eef4cb0085b5720))
+
 ## [1.0.7](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.6...@twind/wmr@1.0.7) (2021-04-26)
 
 **Note:** Version bump only for package @twind/wmr
