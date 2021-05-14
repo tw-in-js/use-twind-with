@@ -75,7 +75,7 @@ export default withTwindApp(MyApp)
 
   </details>
 
-3. Create/Update your `pages/_document.js`
+2. Create/Update your `pages/_document.js`
 
 ```js
 import withTwindDocument from '@twind/next/document'
@@ -129,7 +129,7 @@ export default withTwindDocument(MyDocument)
 
   </details>
 
-4. Use twind
+3. Use twind
 
 ```jsx
 import NextHead from 'next/head'
@@ -224,7 +224,7 @@ export default withTwindApp(MyApp)
 
   </details>
 
-3. Create/Update your `pages/_document.js`
+2. Create/Update your `pages/_document.js`
 
 ```js
 import withTwindDocument from '@twind/next/shim/document'
@@ -278,7 +278,7 @@ export default withTwindDocument(MyDocument)
 
   </details>
 
-4. Use twind
+3. Use twind
 
 ```jsx
 import NextHead from 'next/head'
