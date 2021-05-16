@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": ["DOM"],
+    "baseUrl": ".",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node", "@nuxt/types"],
+    "paths": {
+      "@twind/nuxt/*": ["src/*"]
+    }
+  }
+}
