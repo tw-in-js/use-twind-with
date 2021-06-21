@@ -70,12 +70,9 @@ test('renderToString emits critical CSS', () => {
 test.skip('renderToStringAsync emits critical CSS', async () => {
   const { html, styles } = await renderToStringAsync(
     () => {
-      const [text] = createResource(
-        'weDontCareAboutThis',
-        (): Promise<string> => {
-          return new Promise((res) => setTimeout(res, 1000, 'Click Me'))
-        },
-      )
+      const [text] = createResource('weDontCareAboutThis', (): Promise<string> => {
+        return new Promise((res) => setTimeout(res, 1000, 'Click Me'))
+      })
 
       return (
         <Suspense fallback="Loading...">
