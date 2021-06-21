@@ -37,7 +37,7 @@ export function styled<Variants, Tag extends Tags>(
         component={tag}
         {...solidProps}
         class={tw(component(twindProps as StyleProps<Variants>))}
-        children={internal.children}
+        children={internal.children as StyleProps<Variants>}
       />
     )
   }
