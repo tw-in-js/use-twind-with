@@ -1,6 +1,6 @@
 {
   "name": "@twind/solid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Twind integration for Solid",
   "keywords": [
     "twind",
