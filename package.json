@@ -1,20 +1,27 @@
 {
   "private": true,
   "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean -y",
     "format": "prettier --write --ignore-path .gitignore .",
     "release": "lerna publish --contents dist",
     "version": "npm run format",
     "test": "lerna run test",
-    "test:coverage": "lerna run test:coverage"
+    "test:coverage": "lerna run test:coverage",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "c8": "^7.3.5",
-    "esbuild": "^0.9.0",
-    "esbuild-register": "^2.0.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@commitlint/config-lerna-scopes": "^12.1.4",
+    "c8": "^7.7.3",
+    "esbuild": "^0.12.9",
+    "esbuild-register": "^2.6.0",
     "esm": "^3.2.25",
+    "husky": "^6.0.0",
     "lerna": "^4.0.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.2",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.4",
     "uvu": "^0.5.1",
     "watchlist": "^0.2.3"
   },
@@ -28,5 +35,11 @@
   "workspaces": [
     "packages/*",
     "examples/*"
-  ]
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  }
 }
