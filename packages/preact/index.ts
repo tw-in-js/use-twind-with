@@ -64,21 +64,22 @@ export const setup = (
           if (props.css) {
             classes.push(tw(directive(css$, props.css)))
           }
-
           props.css = undefined
+        }
+
+        // preact/compat changes `className` to a synonym of `class`.
+        // Thus, we only need this setup when preact/compat isn't imported.
+        if (props.className && !Object.getOwnPropertyDescriptor(props, 'className')?.get) {
+          classes.push(useClassNameProp ? tw(props.className) : props.className)
+          props.className = undefined
         }
 
         if (props.class) {
           classes.push(useClassNameProp ? tw(props.class) : props.class)
-          props.class = undefined
-        }
-
-        if (props.className) {
-          classes.push(useClassNameProp ? tw(props.className) : props.className)
         }
 
         if (classes.length) {
-          props.className = classes.join(' ')
+          props.class = classes.join(' ')
         }
       }
 
