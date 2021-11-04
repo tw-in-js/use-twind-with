@@ -1,6 +1,6 @@
 {
   "name": "@twind/next-with-shim-example",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "scripts": {
     "dev": "next",
@@ -14,7 +14,7 @@
     "twind": "^0.16.0"
   },
   "devDependencies": {
-    "@twind/next": "^1.0.8",
+    "@twind/next": "^1.0.9",
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
