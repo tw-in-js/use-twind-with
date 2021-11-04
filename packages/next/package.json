@@ -32,7 +32,7 @@
   "// These are relative from within the dist/ folder": "",
   "sideEffects": false,
   "peerDependencies": {
-    "next": "10.x || 11.x",
+    "next": "10.x || 11.x || 12.x",
     "react": "^16.6.0 || ^17",
     "twind": ">=0.15.9 <2",
     "typescript": "^4.1.0"
