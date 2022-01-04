@@ -7,7 +7,7 @@ import prerender from 'preact-iso/prerender'
 
 import type { Configuration } from 'twind'
 import type { TwindPreactConfiguration } from '@twind/preact'
-import { asyncVirtualSheet, getStyleTag } from 'twind/server'
+import { asyncVirtualSheet, getStyleTagProperties } from 'twind/server'
 import { setup } from '@twind/preact'
 
 export default function prerenderWithTwind(
@@ -23,8 +23,14 @@ export default function prerenderWithTwind(
   return async (data) => {
       await sheet.reset()
 
-      let { html, ...rest } = await prerender(render(data), options)
+      const result = await prerender(render(data), options)
+      const { id, textContent: children } = getStyleTagProperties(sheet)
 
-      return { ...rest, html: getStyleTag(sheet) + html }
-  }
+      return {
+        ...result,
+        head: {
+          elements: new Set([{ type: 'style', props: { id, children } }])
+        },
+      }
+    })
 }
