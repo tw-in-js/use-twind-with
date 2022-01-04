@@ -20,8 +20,7 @@ export default function prerenderWithTwind(
   setup({ ...config, sheet })
 
   // Ensure to start a new async scope
-  return (data) =>
-    Promise.resolve().then(async () => {
+  return async (data) => {
       await sheet.reset()
 
       const result = await prerender(render(data), options)
