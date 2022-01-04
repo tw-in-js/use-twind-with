@@ -32,5 +32,5 @@ export default function prerenderWithTwind(
           elements: new Set([{ type: 'style', props: { id, children } }])
         },
       }
-    })
+    }
 }
