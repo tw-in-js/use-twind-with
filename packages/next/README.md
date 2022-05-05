@@ -112,7 +112,7 @@ export default withTwindDocument(twindConfig, MyDocument)
 
   </details>
 
-  <details><summary>With a custom App component and no twind config</summary>
+  <details><summary>With a custom Document component and no twind config</summary>
 
 ```js
 import withTwindDocument from '@twind/next/document'
@@ -261,7 +261,7 @@ export default withTwindDocument(twindConfig, MyDocument)
 
   </details>
 
-  <details><summary>With a custom App component and no twind config</summary>
+  <details><summary>With a custom Document component and no twind config</summary>
 
 ```js
 import withTwindDocument from '@twind/next/shim/document'
