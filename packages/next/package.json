@@ -32,8 +32,8 @@
   "// These are relative from within the dist/ folder": "",
   "sideEffects": false,
   "peerDependencies": {
-    "next": "10.x || 11.x || 12.x",
-    "react": "^16.6.0 || ^17",
+    "next": "10.x || 11.x || 12.x || 13.x",
+    "react": "^16.6.0 || ^17 || ^18",
     "twind": ">=0.15.9 <2",
     "typescript": "^4.1.0"
   },
