@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.10](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.9...@twind/wmr@1.0.10) (2022-11-21)
+
+### Bug Fixes
+
+- broken merge ([0f1d9b4](https://github.com/tw-in-js/use-twind-with/commit/0f1d9b499b9e60998b19fb1f28abbb128bef2966))
+- Ensures sheet clears between pages ([#27](https://github.com/tw-in-js/use-twind-with/issues/27)) ([9a71bc0](https://github.com/tw-in-js/use-twind-with/commit/9a71bc0ec3fb8cdd06695662c3b4a81d7cabc497))
+
 ## [1.0.9](https://github.com/tw-in-js/use-twind-with/compare/@twind/wmr@1.0.8...@twind/wmr@1.0.9) (2021-06-26)
 
 ### Bug Fixes
