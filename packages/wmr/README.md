@@ -27,7 +27,7 @@ hydrate(<App />)
 +export { prerender }
 ```
 
-## Shim-like usage but without the [shim](https://twind.dev/docs/handbook/getting-started/using-the-shim.html)
+## Shim-like usage but without the [shim](https://twind.dev/handbook/the-shim.html)
 
 [![Edit twind-shim-wmr](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/twind-shim-wmr-nu61v?fontsize=14&hidenavigation=1&theme=dark)
 
